@@ -11,7 +11,6 @@ def create_logger(config:dict):
 
     :param config with log_file, sentry_dsn
     """
-    log_file = '{}/logs/{}.log'.format(cwd, config['ENV'])
     log_file = config['log_file']
 
     sentry_sdk.init(

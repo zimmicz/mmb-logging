@@ -8,6 +8,6 @@ setuptools.setup(name='mmb_logging',
       author_email='zimmi@tutanota.com',
       license='MIT',
       packages=setuptools.find_packages(),
-      install_requires=['sentry_sdk', 'sentry_sdk.integrations.flask'],
+      install_requires=['sentry_sdk', 'sentry_sdk[flask]'],
       zip_safe=False)
 

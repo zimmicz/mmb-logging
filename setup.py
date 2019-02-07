@@ -1,9 +1,9 @@
 import setuptools
 
-setuptools.setup(name='mmb_logger',
-      version='0.1',
-      description='mapmybook logger',
-      url='http://github.com/zimmicz/map-my-book-logger',
+setuptools.setup(name='mmb_logging',
+      version='0.2',
+      description='mapmybook logging',
+      url='http://github.com/zimmicz/map-my-book-logging',
       author='Michal Zimmermann',
       author_email='zimmi@tutanota.com',
       license='MIT',

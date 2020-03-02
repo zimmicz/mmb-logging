@@ -13,10 +13,11 @@ def create_logger(config:dict):
     """
     log_file = config['log_file']
 
-    sentry_sdk.init(
-        dsn=config['SENTRY_DSN'],
-        integrations=[FlaskIntegration()]
-    )
+    if hasattr(config, 'SENTRY_DSN'):
+        sentry_sdk.init(
+            dsn=config['SENTRY_DSN'],
+            integrations=[FlaskIntegration()]
+        )
 
     if (not os.path.exists(os.path.dirname(log_file))):
         os.makedirs(os.path.dirname(log_file), exist_ok=True)
